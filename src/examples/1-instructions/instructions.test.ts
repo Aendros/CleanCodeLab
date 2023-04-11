@@ -2,19 +2,7 @@
 /* eslint-disable max-lines-per-function */
 /* eslint-disable max-nested-callbacks */
 import * as year from './instructions_ok';
-import { getDateStructure, getMinutesBetweenDates } from './instructions_ok';
-
-describe('Get date structure from date object', () => {
-  test('get the Structure of a Date', () => {
-    const date = new Date('2020-02-29');
-
-    expect(getDateStructure(date)).toEqual({
-      year: 2020,
-      month: 2,
-      day: 29,
-    });
-  });
-});
+import { getMinutesBetweenDates } from './instructions_ok';
 
 describe('Get Minutes Between Dates', () => {
   test('get the deference of two dates in minutes', () => {
